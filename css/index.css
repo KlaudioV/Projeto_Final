@@ -1,0 +1,800 @@
+.hidden {
+	display: none !important;
+}
+
+.overflow {
+	overflow: hidden;
+}
+
+#backToMap {
+	border: 1px black solid;
+}
+
+#idHr {
+	background-color: #17283b;
+}
+
+.refreshButton {
+	z-index: 2;
+	position: absolute;
+	top: 2em;
+	left: 1.2em;
+	box-shadow: 1px 1px 10px 1px #888888;
+	display: block;
+}
+
+.leaflet-right {
+	display: none !important;
+}
+
+.leaflet-popup-content-wrapper,
+.leaflet-popup-tip {
+	background-color: #f2f2f2 !important;
+}
+
+/******************************************* Topo *************************************************/
+
+#topo {
+	/* background-color: #F2E3CF; */
+	background-color: #f2b84b;
+	height: 4.5rem;
+	width: 100%;
+	position: relative;
+}
+
+#idTitulo {
+	font-family: "Georgia", serif;
+	color: #17283b;
+	font-size: 1em;
+	font-weight: bold;
+	position: absolute;
+	max-width: 270px;
+	margin-left: 10px;
+
+	bottom: 25%;
+
+	/*  left: 50%;
+    margin-right: -50%;
+    */
+	text-align: left;
+	/* transform: translate(-50%, -50%); */
+}
+
+select {
+	/* for Firefox */
+	-moz-appearance: none;
+	/* for Chrome */
+	-webkit-appearance: none;
+}
+
+/* For IE10 */
+select::-ms-expand {
+	display: none;
+}
+
+.rightButtons {
+	position: relative;
+	top: 25%;
+	float: right;
+}
+
+.rightButtons > * {
+	margin-left: 5px;
+	display: inline-block;
+}
+
+/***************************************************************************************************/
+
+/******************************** span lina + tipo edificio *****************************************/
+
+.SpanLinha {
+	margin-left:20px;
+	margin-right:87%;
+	margin-top: 0;
+	margin-bottom: 0;
+	border-radius: 5px 5px 5px 5px;
+}
+
+#idTipoEdificio {
+	padding-top: 10px;
+	font-size: 18px;
+}
+
+#idLogoP {
+	margin-left: 20px;
+	margin-right: 10px;
+}
+#idLogoR {
+	margin-left: 20px;
+	margin-right: 10px;
+}
+
+#idPingP{
+	width: 15px;
+	height: 20px;
+	margin-right: 10px;
+}
+
+#idPingR{
+	width: 15px;
+	height: 20px;
+	margin-right: 10px;
+}
+/***************************************************************************************************/
+/************************************   PopUps    ************************************************/
+
+.item1 {
+	grid-area: 1 / 2 / 2 / 4;
+	font-family: Montserrat;
+	font-size: 13px;
+	word-wrap: break-word;
+	width:150px; 
+	margin-bottom: 0;
+	align-self:center;
+}
+.item2 {
+	grid-area: 2 / 2 / 3 / 4;
+	align-self: start;
+}
+.item3 {
+	grid-area: 2 / 3 / 3 / 4;
+	align-self: start;
+}
+
+.item4 { 
+	grid-area: 1 / 1 / 3 / 2;
+	align-self: center;
+}
+
+
+
+#imgPopup {
+	width:100px; 
+	height:100px;
+	border-radius: 5px 5px 5px 5px;
+}
+
+#iDdivPopup {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr; 
+  	grid-template-rows: 2fr 0.2fr; 
+	gap: 0px 10px;
+}
+
+#idBtWaypoint {
+	border-radius: 5px 5px 5px 5px;
+	width:70px; 
+	height:25px;
+}
+
+#idBtInfo {
+	border-radius: 5px 5px 5px 5px;
+	width:70px;
+	height:25px;
+}
+
+#idIconInfo {
+	display: block;
+	width:100%; 
+	height:100%;
+	margin-left: auto;
+  	margin-right: auto;
+	text-align: center;
+}
+
+#idIconTraj {
+	display: block;
+	width:100%;
+	height:100%;
+	margin-left: auto;
+  	margin-right: auto;
+	max-width: 100%;
+	text-align: center;
+}
+
+#idDivRow {
+	margin-left: 0;
+	margin-right: 0;
+	margin-bottom: 0;
+}
+
+#idRetorno {
+	border-radius: 5px 5px 5px 5px;
+	width:25px;
+	height:25px;
+}
+
+img.Retorno {
+	position:absolute;
+    width: 25px;
+    height: 25px;
+    top: 20px;
+    right: 10px;
+    left:20px
+}
+
+/***************************************************************************************************/
+/******************************   Info edificios    ************************************************/
+#Intro {
+	height: 100%;
+	width: 100%;
+}
+
+#infoAdicional {
+	height: 100%;
+	width: 100%;
+	margin-right:0;
+	margin-left: 0;
+	margin-top: 0;
+	margin-bottom: 0;
+	font-family: Montserrat;
+	font-size: 14px;
+}
+
+#idNomeEdificio {
+	margin-left: 20px;
+	margin-right:40%;
+	vertical-align: middle;
+	font-size: 20px;
+	font-weight: bold;
+}
+
+/* #idLableAut {
+	font-weight:bold;
+	font-style: italic;
+	font-size: 14px;
+} */
+
+#idAutores {
+	margin-left: 20px;
+	margin-right: 20%;
+	margin-bottom: 0;
+	font-size: 14px;
+	font-weight:normal;
+}
+
+#idSingleAutors {
+	padding: 0px;
+	margin: 0px;
+	text-align: center;
+	font-style: italic;
+	font-size: 3.5vw;
+	font-weight:normal;
+}
+
+#idData {
+	margin-left: 20px;
+	margin-top: 0;
+	font-size: 14px;
+	font-weight:normal;
+}
+
+
+#idLocalizacao {
+	font-size: 12px;
+	font-weight:normal;
+	margin-left: 10%;
+	margin-right:30%;
+}
+
+/*============= Descricao =====================*/
+#imgCabecalho{
+	max-width:100%;
+	margin-left: 0;
+	margin-right: 0;
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+#infoAdicional.img {
+	position: absolute;
+	max-width:100%;
+	margin-left: 0;
+	margin-right: 0;
+	z-index: 1;
+}
+
+#idDescricao {
+	text-align: left;
+	text-indent: 2em;
+	margin-left: 20px;
+	margin-right: 20px;
+	font-weight:normal;
+}
+
+#idDivSlideShow {
+	display: grid; 
+	grid-template-columns: 20px 200px 20px; 
+}
+
+/*===========================================*/
+
+#idDivColMd {
+	width:auto;
+	max-width: calc(90vh - calc(3.5rem + 1px) - calc(3.5rem + 1px));
+	margin-left: 20px;
+	margin-right: 20px;
+	margin-top: 10px;
+	margin-bottom:0;
+}
+
+#idImagens {
+	object-fit: cover;
+	width:auto;
+	max-width: calc(50vh - calc(3.5rem + 1px) - calc(3.5rem + 1px));
+	height: 100%;
+}
+
+#idImagensPP {
+	object-fit: cover;
+	width:auto;
+	max-width: calc(50vh - calc(3.5rem + 1px) - calc(3.5rem + 1px));
+	height: 100%;
+}
+
+.content {
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+/*============= imagem fullscreen =====================*/
+
+#idImgFull {
+	width: 100%;
+	height: 100%;
+	margin-top: 50%;
+}
+/*=====================================================*/
+
+
+/*----------------------Index---------------*/
+.Logo {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 600px;
+}
+
+div#Logo2 {
+	max-height:calc(100vh - calc(3.5rem + 1px) - calc(3.5rem + 1px));
+	width:auto;
+	max-width: calc(100vh - calc(3.5rem + 1px) - calc(3.5rem + 1px));
+	margin-top: 30px;
+	margin-left: unset;
+	text-align: center;
+	display:none;
+}
+
+#Menu {
+	position: absolute;
+	left:0;
+	right:0;
+	bottom:0;
+	display:block;
+}
+
+#footerIndex {
+	position:fixed;
+	bottom:10px;
+	width:100%;
+	right:10px;
+}
+
+.btn-avancar button {
+	border:none;
+	height: 35px;
+	width: 35px;
+	display: block;
+	background-color: none;
+	float:right;
+}
+
+
+#mapid {
+	position: absolute;
+	height:100%;
+	width:100%;
+	display: block;
+	z-index:0;
+}
+
+div#Idiomas {
+	max-height:calc(100vh - calc(3.5rem + 1px) - calc(3.5rem + 1px));
+	width:auto;
+	max-width: calc(100vh - calc(3.5rem + 1px) - calc(3.5rem + 1px));
+	margin-top: 0;
+	margin-left: unset;
+	display:none;
+	overflow-Y:none;
+	text-align: center;
+}
+div.Idiomas h4{
+	font-weight: 600;
+	font-family: Montserrat;
+	font-size: 20px;
+}
+
+span.TxtIdiomas {
+	font-family: Montserrat;
+	font-size: 13px;
+}
+
+
+/* Optimização do menu de Linguagem */
+div.my-menu {
+	text-align: center;
+	top:50px;
+	
+}
+.dropdown-toggle {
+	color:#f2f2f2;
+	background-color: #052541;
+	border-radius: 5px 5px 5px 5px;
+	border:none;
+	box-shadow: 1px 1px 10px 1px black;
+	height:auto;
+	width: 160px;
+	font-family: Montserrat;
+} 
+
+/* Icon de cada tipo de Edificio para menu Filtragem */
+p.f{
+	text-align: center;
+	font-family: Montserrat;
+	font-size: 14px;
+	font-weight: lighter;
+	color:#052541;
+}
+
+a.p {
+	content: url(../img/Icon_P.png);
+	width: 15px;
+	height: 20px;
+	font-family: Montserrat;
+	font-size: 12px;
+	font-weight: Medium;
+	color:#052541;
+}
+
+a.r {
+	content: url(../img/Icon_R.png);
+	width: 15px;
+	height: 20px;
+	font-family: Montserrat;
+	font-size: 12px;
+	font-weight: medium;
+	color:#052541;
+}
+a.ass {
+	content: url(../img/Icon_Ass.png);
+}
+
+
+  .dropdown-content {
+	display: none;
+	position: absolute;
+	min-width: 200px;
+	overflow: auto;
+    right: 0px;
+	z-index: 1;
+	background-color: white;
+	padding: 50px 25px;
+	height:100%;
+	width: 80%;
+  }
+
+  .divider {
+	border-top: solid 2px #b5b5b5;
+	left:0px;
+  }
+
+  [type="checkbox"] {
+	vertical-align: middle;
+	float: right;
+	transform: scale(1.5);
+	padding-top: 40px;
+  }
+
+[id="Autores-dropdown"] {
+	vertical-align: middle;
+	float:left;
+	font-size: 0.75rem;
+	transform: scale(1);
+	position: absolute;
+	margin-top: 5px;
+	max-width: 190px;
+	border:none;
+	max-width: 250px;
+	font-family: Montserrat;
+	font-weight: bold;
+	font-size: 10px;
+}
+
+.setaDdA {
+	height: 10px;
+	width: 15px;
+}
+.options {
+	width:250px;
+	overflow:scroll;
+}
+
+  .show {display: block;}
+
+  .dropbtn {
+	position: absolute;
+	top: 2em;
+	right: 1.2em;
+	padding: 20px;
+	background: url(../img/Menu_Info.png) no-repeat center;
+	border:none;
+	z-index: 2;
+	box-shadow: 1px 1px 10px 1px #888888;
+	border-radius: 5px 5px 5px 5px;
+	display: block;
+  }
+
+  div.Menu {
+	content: url(../img/Menu.png);
+	z-index: 2;
+	position: absolute;
+	bottom: 0px;
+  }
+
+
+  /* Página Settings */
+
+
+  .btn-group button {
+	background: #052541;
+	border:none;
+	z-index:2;
+	width: 100%; 
+	max-width: 450px;
+	display: block;
+	height: 50px;
+  }
+
+  button.PgPesquisa {
+	border-radius: 10px 0px 0px 0px;
+
+  }
+
+  button.PgMapa {
+	border-radius: 0px 0px 0px 0px;
+  }
+
+  button.PgSettings {
+	border-radius: 0px 10px 0px 0px;
+  }
+
+  div.Settingstyle {
+	background-image: url(../img/Bg_Settings.png);
+	background-repeat: no-repeat;
+	height:auto;
+	max-height:calc(107vh - calc(3.5rem + 1px) - calc(3.5rem + 1px));
+	width:auto;
+	max-width: calc(100vh - calc(3.5rem + 1px) - calc(3.5rem + 1px));
+	margin-top: unset;
+	margin-left: unset;
+	overflow:hidden;
+
+  }
+
+  p.logoSettings {
+	content: url(../img/Logo-Settings.png);
+	margin-top: 20px;
+	margin-left: 20px;
+  }
+
+  .dividerSettings {
+	border-top: solid 2px #1a1a1a;
+	margin-left:20px;
+	margin-right:85%;
+  }
+
+  a.L {
+	  margin-left: 30px;
+  }
+
+  /* Configuração do bottão de Switch da Localização */
+
+  .switch {
+	position: relative;
+	display: inline-block;
+	width: 28px;
+	height: 14px;
+  }
+
+  .switch input { 
+	opacity: 0;
+	width: 0;
+	height: 0;
+  }
+
+  label.switch {
+	float: right;
+	right: 40px;
+	top:10px;
+  }
+
+  .slider {
+	position: absolute;
+	cursor: pointer;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: #ccc;
+	-webkit-transition: .4s;
+	transition: .4s;
+  }
+
+  .slider:before {
+	position: absolute;
+	content: "";
+	height: 14px;
+	width: 14px;
+	left: 0px;
+	bottom: 0px;
+	background-color: #052541;
+	-webkit-transition: .4s;
+	transition: .4s;
+  }
+  
+  input:checked + .slider {
+	background-color: #2196F3;
+  }
+  
+  input:focus + .slider {
+	box-shadow: 0 0 1px #2196F3;
+  }
+
+  input:checked + .slider:before {
+	-webkit-transform: translateX(13px);
+	-ms-transform: translateX(13px);
+	transform: translateX(13px);
+  }
+  
+  .slider.round {
+	border-radius: 50px;
+  }
+  
+  .slider.round:before {
+	border-radius: 50%;
+  }
+
+  /* Scroll Informação */
+
+  div.container-fluid {
+	height:auto;
+	max-height:calc(92vh - calc(3.5rem + 1px) - calc(3.5rem + 1px));
+	width:auto;
+	max-width: calc(100vh - calc(3.5rem + 1px) - calc(3.5rem + 1px));
+	margin-top: unset;
+	margin-left: unset;
+	overflow:scroll;
+	text-align: left;
+	overflow-x: hidden;
+	font-family: Montserrat;
+	font-size: 12px;
+  }
+
+div.container-fluid h5{
+	color: #052541;
+	font-family: Montserrat;
+	margin-bottom: 1px;
+	margin-top:2px;
+	font-size: 16px;
+}
+
+div.container-fluid h6{
+	color: #194266;
+	font-family: Montserrat;
+	margin-bottom:1px;
+	margin-top:2px;
+	font-size: 14px;
+  }
+
+  div.container-fluid p{
+	color: #052541(175, 88, 38); 
+	font-style: italic; 
+	text-align: left;
+	font-family: Montserrat;
+	font-size: 12px;
+  }
+
+::-webkit-scrollbar {
+	width: 8px;
+	height: 6px;
+}
+
+::-webkit-scrollbar-thumb {
+	background: #052541;  
+	border-radius: 10px;
+	}
+	
+::-webkit-scrollbar-track {
+	border: 1px solid #ccc;
+	border-radius: 10px;
+	}
+
+
+	.imgPopUp {
+		width: 100px;
+		height: 100px;
+	}
+
+/*Pontos Page*/
+
+#PP {
+	background-image: url(../img/Bg_Settings.png);
+	background-repeat: no-repeat;
+}
+
+div#PP.container-fluid {
+	height:auto;
+	max-height:calc(96vh - calc(3.5rem + 1px) - calc(3.5rem + 1px));
+	width:auto;
+	max-width: calc(100vh - calc(3.5rem + 1px) - calc(3.5rem + 1px));
+	margin-top: 90px;
+	margin-left: unset;
+	overflow:scroll;
+	text-align: left;
+	overflow-x: hidden;
+	font-family: Montserrat;
+	font-size: 12px;
+
+}
+
+.ponto1 {
+	grid-area: a;
+	align-self: center;
+	border-radius: 10px 10px 10px 10px;
+}
+
+.ponto2 {
+	grid-area: c;
+	align-self: center;
+	text-align: left;
+	font-family: Montserrat;
+	font-size: 13px;
+}
+.ponto3 {
+	grid-area: e;
+	border-radius: 10px 10px 10px 10px;
+	align-self: center;
+	box-shadow: 0.5em 0.2em 1em #052541;
+}
+
+#iDponto{
+	display: grid;
+	grid-template-columns: 80px 10px 140px 0px 80px;
+	grid-template-rows: 80px;
+	grid-template-areas: "a b c d e";
+	height:auto;
+	max-height:100px;
+	width:auto;
+	max-width: 250px;
+	margin-bottom: 30px;
+	margin-top: 0;
+	box-shadow: 1em 1em 1em #052541;
+	border-radius: 10px 10px 10px 10px;
+}
+
+#idBtnPP {
+	display: block;
+	width:100%; 
+	height:100%;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+}
+
+
+#footer {
+	position:fixed;
+	bottom:0;
+	width:100%;
+}
