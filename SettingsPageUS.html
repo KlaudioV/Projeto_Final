@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta http-equiv="Content-Security-Policy" content="default-src *; style-src * 'unsafe-inline'; script-src * 'unsafe-inline' 'unsafe-eval'; media-src *; img-src * filesystem: data:">
+	<meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0" />
+	<script>
+		var lang = 2;
+	</script>
+	<link rel="stylesheet" type="text/css" href="css/index.css" />
+	<script type="text/javascript" src="jquery-3.4.1.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="bootstrap.min.css" />
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+	<link rel="stylesheet" href="https://fonts.google.com/specimen/Montserrat" />
+	<!-- jQuery Modal -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
+	<link rel="stylesheet" type="text/javascript" href="bootstrap.min.js" />
+	<script type="text/javascript" src="cordova.js"></script>
+	<script type="text/javascript" src="all.min.js"></script>
+	<script type="text/javascript" src="img-touch-canvas.js"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+	<!-- Página de Settings depois do click na roda dentada no Menu, com ativação/desativação da Localização, 
+			 mudança de Idioma e informação sobre a aplicação (em que consiste, criadores e versão) -->
+	<div id="Settings" class="Settingstyle">
+		<b>
+			<p class="logoSettings" selected="disabled"></p>
+		</b>
+		<hr class="dividerSettings">
+		<!-- <div class="my-menu">
+			<button class="dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+				<image src="../img/idioma.png" height="35px" width="35px"/>
+			</button>
+			<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+				<a onclick="location.href='index.html'" class="dropdown-item" ><image src="https://www.countryflags.io/pt/flat/32.png" height="35px" width="35px"/>&nbsp;Portugues</a>
+				<a class="dropdown-item" ><image src="https://www.countryflags.io/us/flat/32.png" height="35px" width="35px"/>&nbsp;English</a>
+				<a onclick="location.href='indexFR.html'" class="dropdown-item" ><image src="https://www.countryflags.io/fr/flat/32.png" height="35px" width="35px"/>&nbsp;Français</a>
+			</div>
+		</div> -->
+		<!-- <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+		-->
+		<div class="container-fluid">
+			<h5>About the application:</h5>
+			The virtual guide to the Modern Architecture Roadmap for the city of Tomar
+			integrates a selected set of public and residential buildings
+			which were designed between 1930 and 1965.<br />
+			The Modern Architecture Roadmap emerged as a result of a
+			research project started at the end of 2015, and for which it was
+			established a protocol between the Polytechnic Institute of Tomar and the
+			Tomar City Council. The partnership enabled the development
+			of a study on Modern Architecture in the city of Tomar, through
+			the survey, research and analysis of a set of buildings,
+			designed between 1930 and 1965. The work developed resulted in a
+			exhibition and printed publication of a script in book form, in
+			2018.<br />
+			Since one of the objectives of the project focused on the dissemination of this
+			heritage to the general public, it was considered relevant to its
+			transposition to other formats and platforms. Indeed, the
+			constitution of a virtual guide can prove to be an important basis.
+			for the valorization of buildings built under the aegis of modernism
+			and the urban spaces they occupy and transform. The virtual registry of
+			immovable object can thus be a way to frame and expand the
+			strategies for the dissemination of architectural heritage to users
+			increasingly frequent digital platforms, creating new
+			references as an alternative to cultural guides and itineraries and
+			conventional tourist attractions.<br />
+			The Modern Architecture Roadmap virtual guide was
+			developed by students of the Project course unit (year
+			academic 2018-2019) of the Degree in Computer Engineering, of the
+			Polytechnic Institute of Tomar.
+			<br /><br />
+			<h5>Students</h5>
+			Rodolfo Santos & Tiago Costa
+			<br />
+			<h6>Version 2:</h6>
+			Carlos Poupado & Luís Badalo
+			<br />
+			<h6>Version 2.1:</h6>
+			André Ramos & Cláudio Velez
+			<br /><br />
+			<h5>Advisor</h5>
+			Paulo Santos
+			<br /><br />
+			<h5>Responsible for the project</h5>
+			Anabela Moreira & Inês Serrano
+			<br /><br />
+			<h5>Photography and Image Scanning</h5>
+			Photography Laboratory of the Polytechnic Institute of Tomar.
+			<p><br />
+			All information contained in the application was provided by the
+			teachers, and responsible for the project, Anabela Moreira and Inês
+			Serrano.
+			</p>
+		</div>
+		<div id="footer" class="btn-group" role="group">
+			<button class="PgPesquisa" onclick="location.href='PontosPageUS.html'">
+				<input type="image" src='img/Icon-Pesquisa.png'
+					onMouseOver="this.src='../img/Icon-Pesquisa-selected.png'"
+					onMouseOut="this.src='../img/Icon-Pesquisa.png'">
+			</button>
+			<button class="PgMapa" onclick="location.href='MapaPageUS.html'">
+				<input type="image" src='img/Icon-Mapa.png' onMouseOver="this.src='../img/Icon-Mapa-selected.png'"
+					onMouseOut="this.src='../img/Icon-Mapa.png'">
+			</button>
+			<button class="PgSettings" onclick="location.href='SettingsPageUS.html'">
+				<input type="image" src='../img/Icon-Settings-selected.png'>
+			</button>
+		</div>
+	</div>
+</body>
+
+</html>

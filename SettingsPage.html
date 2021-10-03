@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta http-equiv="Content-Security-Policy" content="default-src *; style-src * 'unsafe-inline'; script-src * 'unsafe-inline' 'unsafe-eval'; media-src *; img-src * filesystem: data:">
+	<meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0" />
+	<script>
+		var lang = 2;
+	</script>
+	<link rel="stylesheet" type="text/css" href="css/index.css" />
+	<script type="text/javascript" src="jquery-3.4.1.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="bootstrap.min.css" />
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+	<link rel="stylesheet" href="https://fonts.google.com/specimen/Montserrat" />
+	<!-- jQuery Modal -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
+	<link rel="stylesheet" type="text/javascript" href="bootstrap.min.js" />
+	<script type="text/javascript" src="cordova.js"></script>
+	<script type="text/javascript" src="all.min.js"></script>
+	<script type="text/javascript" src="img-touch-canvas.js"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+	<!-- Página de Settings depois do click na roda dentada no Menu, com ativação/desativação da Localização, 
+			 mudança de Idioma e informação sobre a aplicação (em que consiste, criadores e versão) -->
+	<div id="Settings" class="Settingstyle">
+		<b>
+			<p class="logoSettings" selected="disabled"></p>
+		</b>
+		<hr class="dividerSettings">
+		<!-- <div class="my-menu">
+			<button class="dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+				<image src="../img/idioma.png" height="35px" width="35px"/>
+			</button>
+			<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+				<a class="dropdown-item" ><image src="https://www.countryflags.io/pt/flat/32.png" height="35px" width="35px"/>&nbsp;Portugues</a>
+				<a onclick="location.href='indexUS.html'" class="dropdown-item" ><image src="https://www.countryflags.io/us/flat/32.png" height="35px" width="35px"/>&nbsp;English</a>
+				<a onclick="location.href='indexFR.html'" class="dropdown-item" ><image src="https://www.countryflags.io/fr/flat/32.png" height="35px" width="35px"/>&nbsp;Français</a>
+			</div> -->
+		<!-- </div>
+		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+		 -->
+		<div class="container-fluid">
+			<h5>Sobre a aplicação:</h5>
+			O guia virtual do Roteiro de Arquitetura Moderna da cidade de Tomar
+			integra um conjunto selecionado de edifícios públicos e residenciais
+			que foram projetados entre 1930 e 1965.<br />
+			O Roteiro de Arquitetura Moderna surgiu na sequência de um
+			projeto de investigação iniciado no final de 2015, e para o qual foi
+			estabelecido um protocolo entre o Instituto Politécnico de Tomar e a
+			Câmara Municipal de Tomar. A parceria possibilitou o desenvolvimento
+			de um estudo sobre a Arquitetura Moderna na cidade de Tomar, através
+			do levantamento, pesquisa e análise de um conjunto de edifícios,
+			projetados entre 1930 e 1965. O trabalho desenvolvido resultou numa
+			exposição e na publicação impressa de um roteiro na forma de livro, em
+			2018.<br />
+			Dado que um dos objetivos do projeto incidiu na divulgação deste
+			património ao público em geral, julgou-se pertinente a sua
+			transposição para outros formatos e plataformas. Com efeito, a
+			constituição de um guia virtual pode revelar-se uma base importante
+			para a valorização de edifícios construídos sob a égide do modernismo
+			e dos espaços urbanos que ocupam e transformam. O registo virtual do
+			objeto imóvel pode assim ser uma forma de enquadrar e ampliar as
+			estratégias de divulgação do património arquitetónico aos utilizadores
+			cada vez mais frequentes de plataformas digitais, criando novos
+			referenciais em alternativa aos guias e roteiros culturais e
+			turísticos convencionais.<br />
+			O guia virtual do Roteiro de Arquitetura Moderna foi
+			desenvolvido pelos estudantes da unidade curricular Projeto (ano
+			letivo 2018-2019) da Licenciatura em Engenharia Informática, do
+			Instituto Politécnico de Tomar.
+			<br /><br />
+			<h5>Alunos</h5>
+			Rodolfo Santos & Tiago Costa
+			<br />
+			<h6>Versão 2:</h6>
+			Carlos Poupado & Luís Badalo
+			<br />
+			<h6>Versão 2.1:</h6>
+			André Ramos & Cláudio Velez
+			<br /><br />
+			<h5>Orientador</h5>
+			Paulo Santos
+			<br /><br />
+			<h5>Responsáveis pelo projeto</h5>
+			Anabela Moreira & Inês Serrano
+			<br /><br />
+			<h5>Fotografias e digitalização de imagens</h5>
+			Laboratório de Fotografia do Instituto Politécnico de Tomar.
+			<p><br />
+				Toda a informação contida na aplicação foi fornecida pelas
+				professoras, e responsáveis pelo projeto, Anabela Moreira e Inês
+				Serrano.
+			</p>
+		</div>
+		<div id="footer" class="btn-group" role="group">
+			<button class="PgPesquisa" onclick="location.href='PontosPage.html'">
+				<input type="image" src='img/Icon-Pesquisa.png'
+					onMouseOver="this.src='../img/Icon-Pesquisa-selected.png'"
+					onMouseOut="this.src='../img/Icon-Pesquisa.png'">
+			</button>
+			<button class="PgMapa" onclick="location.href='MapaPage.html'">
+				<input type="image" src='img/Icon-Mapa.png' onMouseOver="this.src='../img/Icon-Mapa-selected.png'"
+					onMouseOut="this.src='../img/Icon-Mapa.png'">
+			</button>
+			<button class="PgSettings" onclick="location.href='SettingsPage.html'">
+				<input type="image" src='../img/Icon-Settings-selected.png'>
+			</button>
+		</div>
+	</div>
+</body>
+
+</html>

@@ -1,0 +1,1 @@
+INSERT INTO Edificios (idEdificio, idAutor, Localizacao, Autores, Data, TipoEdif, idImag, CoordLongEdif, CoordLatEdif) VALUES (1, 1, 'aaa', 'aaa', '111', 'aaaa', 1, 222.1, 2222.3);

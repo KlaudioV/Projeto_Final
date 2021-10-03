@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+	<head>
+        <meta http-equiv="Content-Security-Policy" content="default-src *; style-src * 'unsafe-inline'; script-src * 'unsafe-inline' 'unsafe-eval'; media-src *; img-src * filesystem: data:">
+        <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0" />
+        <script>
+            var lang = 1;
+        </script>
+        <link rel="stylesheet" type="text/css" href="css/index.css" />
+        <script type="text/javascript" src="jquery-3.4.1.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="bootstrap.min.css" />
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+        <link rel="stylesheet" href="https://fonts.google.com/specimen/Montserrat" />
+        <!-- jQuery Modal -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
+        <link rel="stylesheet" type="text/javascript" href="bootstrap.min.js" />
+        <script type="text/javascript" src="js/index.js"></script>
+        <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="all.min.js"></script>
+        <script type="text/javascript" src="img-touch-canvas.js"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+	</head>
+    <script>
+        /* When the user clicks on the button, 
+			toggle between hiding and showing the dropdown content */
+			function FiltroPontos() {
+			document.getElementById("DropdownPontos").classList.toggle("show");
+			}
+			function ShowArqDiv() {
+			document.getElementById("DropdownArq").classList.toggle("show");
+			}
+    </script>
+    <body >
+        <div id="container">
+            <div id="header">
+                <!-- <div id="search" class="input-group rounded">
+                    <input type="search" class="form-control rounded" placeholder="Search" aria-label="Search"
+                        aria-describedby="search-addon" />
+                    <span class="input-group-text border-0" id="search-addon">
+                        <i class="fas fa-search"></i>
+                    </span>
+                </div> -->
+                <button id="btnfiltro" class="dropbtn" onclick="FiltroPontos()"></button>
+                <div id="DropdownPontos" class="dropdown-content">
+                    <b><p class="f" selected="disabled">Filtrar</p></b>
+                    <hr class="divider">
+                    <b><a class="p"></a>&nbsp; Publico &nbsp;<input class="checkbox" id="checkboxP" type="checkbox"checked="true" /></b>
+                    <br>
+                    <b><a class="r"></a>&nbsp; Residencial &nbsp;<input class="checkbox" type="checkbox" id="checkboxR" checked="true"></b>
+                    <br>
+                    <br>
+                    <a class="ass"></a>
+                    <select id="Autores-dropdown" name="Autores"></select>
+                </div>
+              
+                <div class="hidden" id="infoAdicional"></div>
+            </div>
+            <div id="body">
+                <div id="PP" class="container-fluid"></div>
+            </div>
+            <div id="footer" class="btn-group" role="group">
+                <button class="PgPesquisa" onclick="location.href='PontosPage.html'">
+                    <input type="image" src='../img/Icon-Pesquisa-selected.png'>
+                </button>
+                <button class="PgMapa" onclick="location.href='MapaPage.html'">
+                    <input type="image" src='img/Icon-Mapa.png'
+                    onMouseOver="this.src='../img/Icon-Mapa-selected.png'" 
+                    onMouseOut="this.src='../img/Icon-Mapa.png'">
+                </button>
+                <button class="PgSettings" onclick="location.href='SettingsPage.html'">
+                    <input type="image" src='img/Icon-Settings.png'
+                    onMouseOver="this.src='../img/Icon-Settings-selected.png'" 
+                    onMouseOut="this.src='../img/Icon-Settings.png'">
+                </button>
+            </div>
+         </div>
+    </body>
+</html>
+    

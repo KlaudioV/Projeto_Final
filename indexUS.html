@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta http-equiv="Content-Security-Policy"
+		content="default-src *; style-src * 'unsafe-inline'; script-src * 'unsafe-inline' 'unsafe-eval'; media-src *; img-src * filesystem: data:">
+	<meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0" />
+	<script>
+		var lang = 2;
+	</script>
+	<link rel="stylesheet" type="text/css" href="css/index.css" />
+	<script type="text/javascript" src="jquery-3.4.1.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="bootstrap.min.css" />
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+	<link rel="stylesheet" href="https://fonts.google.com/specimen/Montserrat" />
+	<!-- jQuery Modal -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
+	<link rel="stylesheet" type="text/javascript" href="bootstrap.min.js" />
+	<script type="text/javascript" src="cordova.js"></script>
+	<script type="text/javascript" src="all.min.js"></script>
+	<script type="text/javascript" src="img-touch-canvas.js"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+</head>
+<script>
+	setTimeout(() => { Logo2.style.display = 'block'; }, 2000);
+	setTimeout(() => { Logo.style.display = 'none'; }, 2000);
+	setTimeout(() => { Idiomas.style.display = 'block'; }, 3000);
+</script>
+
+<body>
+	<!-- Introdução da aplicação com os Logos e o Menu de escolha da linguagem -->
+	<div id="Intro">
+		<div id="Logo" class="Logo">
+			<image src="../img/Logotipo.png" height="500" width="350" />
+		</div>
+		<div id="Logo2" class="Logo2">
+			<image src="../img/Logotipo2.png" height="250" width="175" />
+		</div>
+		<div id="Idiomas" class="Idiomas">
+			<span class="TxtIdiomas">
+				<br>
+				<h4>Language</h4><br> Choose your preferred language <br> to improve your experience <br> with our application
+			</span>
+			</br>
+			</br>
+			<div class="my-menu">
+				<button class="dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+					<image src="../img/idioma.png" height="35px" width="35px"/>
+				</button>
+				<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <a onclick="location.href='index.html'" class="dropdown-item" ><image src="https://www.countryflags.io/pt/flat/32.png" height="35px" width="35px"/>&nbsp;Português</a>
+					<a class="dropdown-item" ><image src="https://www.countryflags.io/us/flat/32.png" height="35px" width="35px"/>&nbsp;English</a>
+				</div>
+			</div>
+			<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+			<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+			<div id="footerIndex" class="btn-avancar">
+				<button class="Avancar" onclick="location.href='MapaPageUS.html'">
+					<input type="image" src='../img/seta.png' height="35px" width="35px">
+				</button>
+			</div>
+		</div>
+	</div>
+</body>
+
+</html>
